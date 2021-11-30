@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-int ledPin = 13;
+int ledPin = 12;
 
 void setup()
 {
