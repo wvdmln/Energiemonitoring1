@@ -20,7 +20,7 @@ boolean Debounce(int pin)
     for (int counter = 0; counter < 10; counter++) // Lees nu 10 ms lang steeds opnieuw de button in.
     {
         delay(1);                      //wacht 1 milliseconde
-        state = digitalRead(drukknop); //lees de drukknop
+        state = digitalRead(pin); //lees de drukknop
         if (state != previousState)    // Als in die 10 ms de buttonstate verandert, gaat opnieuw 10 ms in
         {
             counter = 0;           //reset the counter
